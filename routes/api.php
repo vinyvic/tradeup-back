@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\apiController;
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\AuthController;
 use App\Http\Middleware\CheckApiToken;
 use Illuminate\Http\Request;
@@ -12,4 +12,4 @@ Route::get('/user', function (Request $request) {
 
 Route::post('/tokens/create', [AuthController::class, 'auth']);
 Route::get('token', [AuthController::class, 'token']);
-Route::get('/cep/{cep}', [apiController::class, 'index'])->middleware(CheckApiToken::class);
+Route::get('/cep/{cep}', [ApiController::class, 'index'])->middleware(CheckApiToken::class);
