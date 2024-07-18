@@ -9,10 +9,13 @@ class apiController extends Controller
 {
     function index(string $cep)
     {
+        $cep = trim($cep);
+        $cep = preg_replace('/[^0-9]/', '', $cep);
+
         if (strlen($cep) != 8) {
             return response()->json([
                 'ok' => false,
-                'message' => 'O CEP deve ter 8 digitos',
+                'message' => 'O CEP deve ter 8 digitos numéricos',
             ], 422);
         }
 
