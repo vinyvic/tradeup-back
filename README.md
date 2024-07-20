@@ -21,7 +21,6 @@ Este projeto é uma API em PHP que consome a API do ViaCEP para obter informaç�
 
 - PHP 8.1 ou superior
 - Composer
-- Docker (Para servidor web e banco de dados)
 
 ## Extensões PHP Necessárias
 
