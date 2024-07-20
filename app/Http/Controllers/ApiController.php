@@ -19,7 +19,9 @@ class ApiController extends Controller
             ], 422);
         }
 
-        $response = Http::get("https://viacep.com.br/ws/{$cep}/json/");
+        $response = Http::withOptions([
+            'verify' => false // Desativar SSL para que o testador não precise de certificado no ambiente
+        ])->get("https://viacep.com.br/ws/{$cep}/json/");
 
         if ($response->successful()) {
             $dataFetched = $response->json();
