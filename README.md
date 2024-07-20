@@ -13,9 +13,7 @@ Este projeto é uma API em PHP que consome a API do ViaCEP para obter informaç�
 
 - PHP 8+
 - Laravel 11+
-- Docker
 - Composer
-- cURL
 
 ## Requisitos
 
