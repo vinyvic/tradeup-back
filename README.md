@@ -62,15 +62,19 @@ Certifique-se de que as seguintes extensões PHP estão habilitadas no seu arqui
    ```bash
    php artisan migrate --seed
 
-6. Inicie o servidor de desenvolvimento do Laravel:
+6. Execute o comando para baixar as depdencias do front:
+    ```bash
+    npm install
+    
+7. Execute o comando gerar assets do front:
+    ```bash
+    npm run build
+
+8. Inicie o servidor de desenvolvimento do Laravel:
 
     ```bash
     php artisan serve
 
-7. Execute o comando para baixar as depdencias do front:
-    ```bash
-    npm install
+9. Acesse a URL [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-8. Execute o comando gerar assets do front:
-    ```bash
-    npm run build
+
