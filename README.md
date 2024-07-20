@@ -32,6 +32,8 @@ Certifique-se de que as seguintes extensões PHP estão habilitadas no seu arqui
     extension=curl
     extension=mbstring
     extension=pdo_sqlite
+    extension=fileinfo
+    extension=openssl
 ```
 
 ## Instalação
@@ -76,5 +78,3 @@ Certifique-se de que as seguintes extensões PHP estão habilitadas no seu arqui
     php artisan serve
 
 9. Acesse a URL [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
-
