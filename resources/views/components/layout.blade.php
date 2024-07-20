@@ -28,6 +28,7 @@
 
         <!-- Scripts -->
         @vite('resources/css/app.css')
+        <script src="https://unpkg.com/imask"></script>
     </head>
 
     <body class="bg-gray-50 font-sans antialiased dark:bg-gray-800">
